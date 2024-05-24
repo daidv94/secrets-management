@@ -23,7 +23,7 @@ brew install ruby
 Add these paths into `PATH` environment variable
 
 ```text
-/opt/homebrew/lib/ruby/gems/3.3.0/bin
+/opt/homebrew/lib/ruby/gems/${your_latest_gem_version}/bin
 /opt/homebrew/opt/ruby/bin
 ```
 
@@ -33,7 +33,7 @@ Run update gem system
 sudo gem update --system
 ```
 
-Install mandatory gems
+Install mandatory gems. Ensure ruby version must be >= 2.7, < 4, gem version must be >= 3.0
 
 ```bash
 sudo gem install gpgme hiera-eyaml hiera-eyaml-gpg ruby_gpg
